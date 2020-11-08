@@ -120,7 +120,7 @@ def parse_arguments():
   training_parser.add_argument(
       '--train_iteration',
       '-t',
-      default=20000,
+      default=10000,
       type=int,
       help='The total number of training iterations.')
   training_parser.add_argument(

@@ -44,12 +44,7 @@ def diarization_experiment(model_args, training_args, inference_args):
 
   model = uisrnn.UISRNN(model_args)
 
-  # Training.
-  # If we have saved a mode previously, we can also skip training by
-  # calling：
-  # model.load(SAVED_MODEL_NAME)
-  model.fit(train_sequence, train_cluster_id, training_args)
-  model.save(SAVED_MODEL_NAME)
+  model.load(SAVED_MODEL_NAME)
 
   # Testing.
   # You can also try uisrnn.parallel_predict to speed up with GPU.

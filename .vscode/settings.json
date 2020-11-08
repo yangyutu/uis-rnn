@@ -13,4 +13,5 @@
     "--indent-size=2",
     "--max-line-length=80"
   ],
+  "python.pythonPath": "/Users/yuguay/opt/anaconda3/envs/tf2/bin/python",
 }

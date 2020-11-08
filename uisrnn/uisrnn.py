@@ -239,7 +239,7 @@ class UISRNN:
         cluster_id=train_cluster_id,
         num_permutations=args.num_permutations)
 
-    # For batch learning, pack the entire dataset.
+    # For full batch learning, pack the entire dataset.
     if args.batch_size is None:
       packed_train_sequence, rnn_truth = utils.pack_sequence(
           sub_sequences,
